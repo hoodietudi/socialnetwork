@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.LogInController">
+   <children>
+      <Button layoutX="194.0" layoutY="96.0" mnemonicParsing="false" onAction="#signIn" text="Sign in" />
+      <TextField fx:id="txtId" layoutX="105.0" layoutY="52.0" />
+      <Label fx:id="lblStatus" layoutX="76.0" layoutY="99.0" prefHeight="18.0" prefWidth="109.0" />
+      <Label layoutX="44.0" layoutY="57.0" text="ID" />
+      <Label layoutX="27.0" layoutY="169.0" text="First Name" />
+      <Label layoutX="28.0" layoutY="215.0" text="Last Name" />
+      <TextField fx:id="txtFirstName" layoutX="105.0" layoutY="165.0" />
+      <TextField fx:id="txtLastName" layoutX="105.0" layoutY="211.0" />
+      <Button layoutX="192.0" layoutY="248.0" mnemonicParsing="false" onAction="#signUp" text="Sign up" />
+   </children>
+</AnchorPane>

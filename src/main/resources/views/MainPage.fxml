@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.MainController">
+   <children>
+      <TextField fx:id="txtLoggedIn" layoutX="294.0" layoutY="25.0" />
+      <Label layoutX="211.0" layoutY="29.0" text="Logged in as:" />
+      <TableView fx:id="tableFriends" layoutX="24.0" layoutY="110.0" prefHeight="200.0" prefWidth="169.0">
+        <columns>
+          <TableColumn fx:id="friendFirstName" prefWidth="85.33332633972168" text="First Name" />
+          <TableColumn fx:id="friendLastName" prefWidth="82.66666412353516" text="Last Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="86.0" layoutY="81.0" text="Friends">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="257.0" layoutY="81.0" text="Friend requests you received">
+         <font>
+             <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TableView fx:id="tableFriendsRequest" layoutX="211.0" layoutY="110.0" prefHeight="200.0" prefWidth="314.0">
+        <columns>
+          <TableColumn fx:id="requestFrom" prefWidth="105.33335876464844" text="From" />
+          <TableColumn fx:id="requestStatus" prefWidth="95.00003051757812" text="Status" />
+            <TableColumn fx:id="requestDate" prefWidth="111.66665649414062" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="28.0" layoutY="343.0" mnemonicParsing="false" onAction="#loadSearchStage" prefHeight="25.0" prefWidth="57.0" text="Search" />
+      <Button layoutX="97.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleUnfriend" text="Remove Friend" />
+      <Button layoutX="798.0" layoutY="33.0" mnemonicParsing="false" onAction="#logOut" text="Log out" />
+      <Button layoutX="211.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleAcceptRequest" prefHeight="25.0" prefWidth="149.0" text="Accept Friend Request" />
+      <Button layoutX="376.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleRejectRequest" prefHeight="25.0" prefWidth="149.0" text="Reject Friend Request" />
+      <TableView fx:id="tableFriendsRequestSent" layoutX="542.0" layoutY="110.0" prefHeight="200.0" prefWidth="314.0">
+         <columns>
+            <TableColumn fx:id="requestTo" prefWidth="105.33335876464844" text="To" />
+            <TableColumn fx:id="requestStatus1" prefWidth="95.00003051757812" text="Status" />
+            <TableColumn fx:id="requestDate1" prefWidth="111.66665649414062" text="Date" />
+         </columns>
+      </TableView>
+      <Button layoutX="542.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleUnsentRequest" text="Unsend Friend Request" />
+      <Label layoutX="600.0" layoutY="81.0" text="Friend requests you sent">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
